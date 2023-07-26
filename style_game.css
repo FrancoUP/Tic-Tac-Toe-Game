@@ -9,6 +9,7 @@ object {
 }
 
 body {
+  height: 1000px;
   box-sizing: border-box;
   background: var(--dark-navy, #1A2A33);
 
