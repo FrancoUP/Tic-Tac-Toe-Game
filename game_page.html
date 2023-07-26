@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Tic Tac Toe</title>
+    <link rel="stylesheet" href="style_game.css">
+    <script defer type="module" src="script_game.js"></script>
+  </head>
+  <body>
+
+    <div class="overlay"></div>
+
+    <div class="box-band">
+      <div class="title">OH NO, YOU LOST…</div>
+
+      <div class="message-container">
+        <div class="message-icon-cont"></div>
+        <div class="message">TAKES THE ROUND</div>
+      </div>
+
+      <div class="buttons-container">
+        <button class="btn-quit">QUIT</button>
+        <button class="btn-next-round">NEXT ROUND</button>
+      </div>
+    </div>
+
+    <main class="main-container">
+
+      <div class="top-box">
+        <div class="logo-box">
+          <img src="./assets/icon-xo.png" alt="qr code image" class="icon-xo">
+        </div>
+ 
+        <div class="turn-box">
+          <div class="icon-cont" data-store=""></div>
+          <div class="turn">TURN</div>
+        </div>
+ 
+        <div class="reload-box">
+         <div class="reload">
+           <object class="icon-restart" title="logo restert" type="image/svg+xml" data="./assets/icon-restart.svg"></object>
+         </div>
+        </div>
+      </div>
+
+      <div class="middle-box">
+
+        <div class="box" data-clicked=""></div>
+        <div class="box" data-clicked=""></div>
+        <div class="box" data-clicked=""></div>
+        <div class="box" data-clicked=""></div>
+        <div class="box" data-clicked=""></div>
+        <div class="box" data-clicked=""></div>
+        <div class="box" data-clicked=""></div>
+        <div class="box" data-clicked=""></div>
+        <div class="box" data-clicked=""></div>
+
+      </div>
+
+      <div class="box-bottom">
+        <div class="box-you">
+          <div class="name you"></div>
+          <div class="result result-you">0</div>
+       </div>
+
+       <div class="box-ties">
+          <div class="name ties">TIES</div>
+          <div class="result result-ties">0</div>
+       </div>
+
+       <div class="box-cpu">
+          <div class="name cpu"></div>
+          <div class="result result-cpu">0</div>
+       </div>
+      </div>
+       
+    </main>
+
+  </body>
+</html>
