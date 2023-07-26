@@ -8,8 +8,7 @@ object {
   pointer-events: none;
 }
 
-body {
-  height: 1000px;
+body {
   box-sizing: border-box;
   background: var(--dark-navy, #1A2A33);
 
