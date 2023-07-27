@@ -85,6 +85,8 @@ btnCpu.addEventListener("touchend", function(e) {
 
   btnCpu.style.backgroundColor = " #F2B137";
   playerInfoObj.opponent = "cpu";
+  if(playerInfoObj.player === "o") playerInfoObj.database = "dataToSave_CPU_O";
+  if(playerInfoObj.player === "x") playerInfoObj.database = "dataToSave_CPU_X";
   
   const dataToPass = JSON.stringify(playerInfoObj);
   localStorage.setItem("dataToPass", dataToPass);
@@ -105,6 +107,8 @@ btnPlayer.addEventListener("touchend", function(e) {
 
   btnPlayer.style.backgroundColor = "#31C3BD";
   playerInfoObj.opponent = "p2";
+  if(playerInfoObj.player === "o") playerInfoObj.database = "dataToSave_P2_O";
+  if(playerInfoObj.player === "x") playerInfoObj.database = "dataToSave_P2_X";
   
   const dataToPass = JSON.stringify(playerInfoObj);
   localStorage.setItem("dataToPass", dataToPass);
