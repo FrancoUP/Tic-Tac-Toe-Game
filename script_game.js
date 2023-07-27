@@ -67,20 +67,6 @@ let keyTimeout = true;
   };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   (function setPlayers() {
 
     if(dataPlayer.player === "x" && dataPlayer.opponent === "cpu") {
@@ -105,6 +91,8 @@ let keyTimeout = true;
 
   const showMessage = function() {
 
+    overlay.classList.add("smooth");
+    band.classList.add("smooth");
     overlay.style.opacity = "0.5";
     band.style.opacity = "1";
     overlay.style.zIndex = "103";
@@ -114,6 +102,8 @@ let keyTimeout = true;
 
   const setMessageDefaultSettings = function() {
 
+    overlay.classList.remove("smooth");
+    band.classList.remove("smooth");
     overlay.style.opacity = "0";
     band.style.opacity = "0";
     overlay.style.zIndex = "100";
