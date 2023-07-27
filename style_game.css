@@ -228,6 +228,10 @@ body {
   gap: 25px;
 }
 
+.smooth {
+  transition: opacity 0.5s;
+}
+
 .title {
   color: var(--silver, #A8BFC9);
   font-family: Outfit;
