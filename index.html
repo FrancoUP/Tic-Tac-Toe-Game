@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html leng="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Tic Tac Toe</title>
+    <link rel="stylesheet" href="style_main.css">
+    <script defer type="module" src="script_main.js"></script>
+  </head>
+<body>
+
+  <main class="main-container">
+    <div class="xo-container">
+      <object class="icon-xo" title="logo x" type="image/svg+xml" data="./assets/logo.svg"></object>
+    </div>
+
+    <div class="player-choice-container">
+      <div class="player-choice-title">PICK PLAYER 1’S MARK</div>
+      <div class="x-o-box">
+        <div class="container-x" data-clicked="false">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 32 32" version="1.1"><path class="icon-x" style="stroke:none;fill-rule:evenodd;fill:rgb(65.882353%,74.901961%,78.823529%);fill-opacity:1;" d="M 7.5 0.574219 L 16 9.074219 L 24.5 0.574219 C 25.085938 -0.0117188 26.035156 -0.0117188 26.621094 0.574219 L 31.425781 5.378906 C 32.011719 5.964844 32.011719 6.914062 31.425781 7.5 L 22.925781 16 L 31.425781 24.5 C 32.011719 25.085938 32.011719 26.035156 31.425781 26.621094 L 26.621094 31.425781 C 26.035156 32.011719 25.085938 32.011719 24.5 31.425781 L 16 22.925781 L 7.5 31.425781 C 6.914062 32.011719 5.964844 32.011719 5.378906 31.425781 L 0.574219 26.621094 C -0.0117188 26.035156 -0.0117188 25.085938 0.574219 24.5 L 9.074219 16 L 0.574219 7.5 C -0.0117188 6.914062 -0.0117188 5.964844 0.574219 5.378906 L 5.378906 0.574219 C 5.964844 -0.0117188 6.914062 -0.0117188 7.5 0.574219 Z M 7.5 0.574219 "/></svg>
+        </div>
+        <div class="container-o" data-clicked="true">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px" viewBox="0 0 34 34" version="1.1"><path class="icon-o" style=" stroke:none;fill-rule:nonzero;fill:rgb(10.196078%,16.470588%,20%);fill-opacity:1;" d="M 17 0 C 26.390625 0 34 7.609375 34 17 C 34 26.390625 26.390625 34 17 34 C 7.609375 34 0 26.390625 0 17 C 0 7.609375 7.609375 0 17 0 Z M 17 10.074219 C 13.175781 10.074219 10.074219 13.175781 10.074219 17 C 10.074219 20.824219 13.175781 23.925781 17 23.925781 C 20.824219 23.925781 23.925781 20.824219 23.925781 17 C 23.925781 13.175781 20.824219 10.074219 17 10.074219 Z M 17 10.074219 "/></svg>
+        </div>
+      </div>
+      <div class="player-choice-footer">REMEMBER : X GOES FIRST</div>
+    </div>
+
+    <a href="game_page.html">
+      <button class="btn-cpu">NEW GAME (VS CPU)</button>
+    </a>
+
+    <a href="">
+      <button class="btn-player">NEW GAME  (VS PLAYER)</button>
+    </a>
+  </main>
+
+</body>
+</html>
+
+
+
+
+
+
